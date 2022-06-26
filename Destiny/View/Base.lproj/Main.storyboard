@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Destini_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="acY-2a-7a4" userLabel="Background-forest">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KkU-JX-uXk">
+                                <rect key="frame" x="152" y="348" width="41.5" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="storyLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxg-Lb-p93">
+                                <rect key="frame" x="0.0" y="44" width="414" height="618"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyh-Ar-n9y">
+                                <rect key="frame" x="20" y="772" width="374" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="qWj-Rj-UMO"/>
+                                    <constraint firstAttribute="height" constant="90" id="xGg-R9-jjd"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choice2">
+                                    <backgroundConfiguration key="background" image="choice2Background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9g-Xf-t16"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxI-ZO-ra4">
+                                <rect key="frame" x="20" y="672" width="374" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="5he-ak-jw7"/>
+                                    <constraint firstAttribute="height" constant="90" id="V4U-AB-HGe"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choice1">
+                                    <backgroundConfiguration key="background" image="choice1Background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCx-u1-CUX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gxg-Lb-p93" secondAttribute="trailing" id="040-5M-E1s"/>
+                            <constraint firstItem="wyh-Ar-n9y" firstAttribute="top" secondItem="WxI-ZO-ra4" secondAttribute="bottom" constant="10" id="0cr-f3-kQx"/>
+                            <constraint firstItem="WxI-ZO-ra4" firstAttribute="top" secondItem="gxg-Lb-p93" secondAttribute="bottom" constant="10" id="7rp-QE-PjD"/>
+                            <constraint firstAttribute="trailing" secondItem="gxg-Lb-p93" secondAttribute="trailing" id="86A-bN-Ndm"/>
+                            <constraint firstItem="gxg-Lb-p93" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8uo-Zd-YDE"/>
+                            <constraint firstItem="gxg-Lb-p93" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IK3-iy-eEp"/>
+                            <constraint firstItem="wyh-Ar-n9y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="J6z-MX-Ozw"/>
+                            <constraint firstItem="WxI-ZO-ra4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KLF-dp-N2w"/>
+                            <constraint firstItem="wyh-Ar-n9y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S7n-RJ-peb"/>
+                            <constraint firstItem="acY-2a-7a4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VAv-OV-OoD"/>
+                            <constraint firstItem="WxI-ZO-ra4" firstAttribute="top" secondItem="gxg-Lb-p93" secondAttribute="bottom" constant="10" id="Xcn-2Y-env"/>
+                            <constraint firstItem="wyh-Ar-n9y" firstAttribute="top" secondItem="WxI-ZO-ra4" secondAttribute="bottom" constant="10" id="bHo-z9-2Tp"/>
+                            <constraint firstItem="gxg-Lb-p93" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="drl-kp-Ejb"/>
+                            <constraint firstItem="acY-2a-7a4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="o66-GP-Iyj" userLabel="Background-forest.trailing = trailing"/>
+                            <constraint firstItem="gxg-Lb-p93" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oeZ-HH-Bv7"/>
+                            <constraint firstItem="WxI-ZO-ra4" firstAttribute="top" secondItem="gxg-Lb-p93" secondAttribute="bottom" constant="10" id="raA-GU-coE"/>
+                            <constraint firstItem="acY-2a-7a4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="saC-g3-k4B" userLabel="Background-forest.leading = leading"/>
+                            <constraint firstAttribute="bottom" secondItem="acY-2a-7a4" secondAttribute="bottom" id="zkR-0s-dnG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="WxI-ZO-ra4" id="TWZ-mo-bob"/>
+                        <outlet property="choice2Button" destination="wyh-Ar-n9y" id="0dY-Rd-S5L"/>
+                        <outlet property="storyLabel" destination="gxg-Lb-p93" id="cth-uT-lIV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339" y="163"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="958" height="1793"/>
+        <image name="choice1Background" width="1370.5" height="363"/>
+        <image name="choice2Background" width="1370.5" height="363"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
